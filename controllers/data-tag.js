@@ -60,3 +60,24 @@ export const createDataTag = catchAsyncErrors(async (req, res) => {
     message: 'OK',
   })
 })
+
+export const searchDataTag = catchAsyncErrors(async (req, res) => {
+  let buildNumber = req.body.searchBuildNumber
+
+  console.log(buildNumber)
+  const found = await Tag.findOne({
+    buildNumber,
+  })
+
+  if (!found) {
+    return res.json({
+      error: 'Build number not found',
+      status: 400,
+    })
+  }
+
+  res.status(200).json({
+    message: 'OK',
+    found,
+  })
+})

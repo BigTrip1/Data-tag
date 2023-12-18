@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .header {
@@ -59,7 +59,7 @@ body {
   max-width: 60%;
   width: 100%;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 100px;
   margin-bottom: 100px;
   position: relative;
   display: flex;
@@ -137,9 +137,9 @@ tr:nth-child(even) {
   background-color: #0e0d0d;
 }
 
-tr:hover {
-  background-color: #ddd;
-}
+/* tr:hover {
+  background-color: #249900;
+} */
 
 .main-header {
   color: white;

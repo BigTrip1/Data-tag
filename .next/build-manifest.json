@@ -26,6 +26,16 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/data-tag.js"
+    ],
+    "/data-tag/log": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/data-tag/log.js"
+    ],
+    "/data-tag/search": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/data-tag/search.js"
     ]
   },
   "ampFirstPages": []

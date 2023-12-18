@@ -46,7 +46,8 @@ const DataTagMainPage = () => {
     if (value.includes('CFN')) {
       setValidationErrors((prev) => ({
         ...prev,
-        datatagID: 'Incorrect barcode. Please see the SOP and try again.',
+        datatagID:
+          'Incorrect barcode scanned. (it looks like you have scanned the Datatag membership number) Please see the SOP and try again.',
       }))
     } else if (!/^\d[A-Z0-9]{15}$/.test(value)) {
       setValidationErrors((prev) => ({
@@ -129,19 +130,19 @@ const DataTagMainPage = () => {
 
   return (
     <>
-      <div className='container mx-auto mt-4 mb-10 p-5 bg-gray-800 rounded-lg shadow-lg max-w-sm'>
-        <div className='flex flex-col gap-10'>
+      <div className='container mx-auto mt-4 mb-10 p- bg-gray-800 rounded-lg shadow-lg max-w-sm'>
+        <div className='flex flex-col gap-1'>
           {/* Build Number Input */}
           <div className='flex flex-col'>
             <label
               className='text-white mb-2 font-bold text-xl text-center'
               htmlFor='buildNumber'
             >
-              Scan Build Numbers:
+              Scan Build Number:
             </label>
             <input
-              className={`rounded p-2 w-full border-2 ${
-                validationErrors.buildNumber
+              className={`rounded p-4 w-full border-2 ${
+                validationErrors.buildNumberscan
                   ? 'border-red-500'
                   : 'border-gray-200'
               } text-black text-lg placeholder-gray-500`}
@@ -169,7 +170,7 @@ const DataTagMainPage = () => {
               Scan Datatag:
             </label>
             <input
-              className={`rounded p-2 w-full border-2 ${
+              className={`rounded p-4 w-full border-2 ${
                 validationErrors.datatagID
                   ? 'border-red-500'
                   : 'border-gray-200'
@@ -197,7 +198,7 @@ const DataTagMainPage = () => {
               Scan Clock Card:
             </label>
             <input
-              className={`rounded p-2 w-full border-2 ${
+              className={`rounded p-4 w-full border-2 ${
                 validationErrors.clockCard
                   ? 'border-red-500'
                   : 'border-gray-200'
@@ -218,8 +219,7 @@ const DataTagMainPage = () => {
 
           {/* Submit Button */}
           <button
-            className='mt-8 p-3 w-full text-lg font-bold text-white rounded hover:bg-orange-700'
-            style={{ backgroundColor: 'rgb(249, 177, 1)' }}
+            className='mt-8 p-6 w-full text-lg font-bold text-white rounded hover:bg-green-700 bg-jcb'
             onClick={validateAndSubmit}
             disabled={loading}
           >
