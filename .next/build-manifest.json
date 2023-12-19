@@ -32,6 +32,11 @@
       "static/chunks/main.js",
       "static/chunks/pages/data-tag/log.js"
     ],
+    "/data-tag/reallocations": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/data-tag/reallocations.js"
+    ],
     "/data-tag/search": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",

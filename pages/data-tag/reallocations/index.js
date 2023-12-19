@@ -27,7 +27,7 @@ const ReallocationRequestPage = () => {
               REJECT DATATAG
             </h2>
             <div className='bg-red-900 border-2 border-red-500 rounded-lg p-4'>
-              <div className='mb-4'>
+              <div className='mb-4 font-bold'>
                 <label htmlFor='rejectBuildNumber'>Build Number:</label>
                 <input
                   type='text'
@@ -38,7 +38,7 @@ const ReallocationRequestPage = () => {
                   className='rounded p-2 w-full'
                 />
               </div>
-              <div className='mb-4'>
+              <div className='mb-4 font-bold'>
                 <label htmlFor='rejectDatatagID'>Reject Datatag ID:</label>
                 <input
                   type='text'
@@ -56,7 +56,7 @@ const ReallocationRequestPage = () => {
                   value={reasonIssue}
                   onChange={(e) => setReasonIssue(e.target.value)}
                   placeholder='Describe the issue'
-                  className='rounded p-2 w-full'
+                  className='rounded p-2 w-full font-bold'
                   rows='4'
                 />
               </div>
@@ -70,7 +70,7 @@ const ReallocationRequestPage = () => {
               NEW DATATAG
             </h2>
             <div className='bg-green-900 border-2 border-green-500 rounded-lg p-4'>
-              <div className='mb-4'>
+              <div className='mb-4 font-bold'>
                 <label htmlFor='newBuildNumber'>Build Number:</label>
                 <input
                   type='text'
@@ -78,10 +78,10 @@ const ReallocationRequestPage = () => {
                   value={newBuildNumber}
                   onChange={(e) => setNewBuildNumber(e.target.value)}
                   placeholder='Enter Build Number'
-                  className='rounded p-2 w-full'
+                  className='rounded p-2 w-full font-bold'
                 />
               </div>
-              <div className='mb-4'>
+              <div className='mb-4 font-bold'>
                 <label htmlFor='newDatatag'>New Datatag:</label>
                 <input
                   type='text'
@@ -99,7 +99,7 @@ const ReallocationRequestPage = () => {
                   value={resolutionFix}
                   onChange={(e) => setResolutionFix(e.target.value)}
                   placeholder='Describe the resolution'
-                  className='rounded p-2 w-full'
+                  className='rounded p-2 w-full font-bold'
                   rows='4'
                 />
               </div>
@@ -107,12 +107,12 @@ const ReallocationRequestPage = () => {
           </div>
         </div>
         {/* Reallocation Confirmation */}
-        <div className='mt-6'>
+        <div className='mt-6 font-bold'>
           <h2 className='text-blue-500 text-3xl font-bold text-center mb-4'>
             REALLOCATION CONFIRMATION
           </h2>
-          <div className='bg-blue-900 border-2 border-blue-500 rounded-lg p-4'>
-            <div className='mb-4'>
+          <div className='bg-blue-900 border-2 border-blue-500 rounded-lg p-4 font-bold'>
+            <div className='mb-4 font-bold'>
               <label htmlFor='name'>Name:</label>
               <input
                 type='text'
@@ -123,7 +123,7 @@ const ReallocationRequestPage = () => {
                 className='rounded p-2 w-full'
               />
             </div>
-            <div className='mb-4'>
+            <div className='mb-4 font-bold'>
               <label htmlFor='clockCard'>Clock Card:</label>
               <input
                 type='text'
@@ -131,7 +131,7 @@ const ReallocationRequestPage = () => {
                 value={clockCard}
                 onChange={(e) => setClockCard(e.target.value)}
                 placeholder='Enter Clock Card Number'
-                className='rounded p-2 w-full'
+                className='rounded p-2 w-full font-bold'
               />
             </div>
             <button

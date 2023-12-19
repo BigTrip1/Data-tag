@@ -2,9 +2,9 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/data-tag/log": "pages/data-tag/log.js",
-  "/api/search": "pages/api/search.js",
   "/data-tag/search": "pages/data-tag/search.js",
+  "/api/data-tag": "pages/api/data-tag.js",
   "/data-tag": "pages/data-tag.js",
-  "/api/data-tag": "pages/api/data-tag.js"
+  "/data-tag/log": "pages/data-tag/log.js",
+  "/api/search": "pages/api/search.js"
 }
